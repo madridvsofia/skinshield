@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Lobster+Two:ital,wght@0,400;1,700&family=Sofia&display=swap');
+
+:root {
+    --background: #dad7cd;
+    --primary: #af8a4b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Amiko', sans-serif;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Sofia', cursive;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(218,215,203,0.6);
+    
+}
+
+.logo { 
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    }
+
+.carrito {
+    height: 40%;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    background-color: var(--background);
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bolder;
+}
+
+.navbar-list li {
+    font-family: 'Amiko', sans-serif;
+    font-weight: bolder;
+    border-radius: 15px;
+    color: black;
+    padding: 14px;
+    gap: 5px;
+    opacity: 75%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(201,168,111,0.6)
+}
+
+#hero {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(218,215,203,0.6);
+    border-radius: 15px;
+    
+}
+
+.heroimage {
+    width: 100%;
+    height: 600px;
+    padding-bottom: 10px;    
+}
+
+h1 { 
+    font-size: 4rem;
+    font-weight: lighter;
+    color: black;
+    padding: 50px;
+    background: rgba(201,168,111,0.7);
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+h1 span {
+    font-weight: 600;
+    font-style: italic;
+}
+
+#infocards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(218,215,203,0.6);
+    border-radius: 10px;
+}
+
+.section-title {
+    font-family: 'Amiko', sans-serif;
+    font-size: 35px;
+    padding: 30px;
+}
+
+.infoimg {
+    width: 130px;
+    height: 130px;
+}
+
+.infocards-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.infocards-container h2 {
+    font-family: 'Amiko', sans-serif;
+    font-weight: lighter;
+}
+
+#products-cards {
+    width: 100%;
+    height: 700px;
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    
+}
+
+.product-ingredient li  {
+    font-family: 'Lobster Two', cursive;
+    font-size: 19px;
+}
+
+.serum-price {
+    font-family: 'Amiko', sans-serif;
+    font-weight: bold;
+}
+
+.add-buttom {
+    font-family: 'Amiko', sans-serif;
+    gap: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 160%;
+    background: linear-gradient(98deg, rgb(180, 147, 89) 20%, rgb(209, 186, 123) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.product { 
+    width: 240px;
+    height: 280px;
+    border: rgba(201,168,111,0.6);
+    border-style: outset;
+    background-color: #dad7cd;
+    border-radius: 20px;
+}
+
+.info-serums  {
+    background-color: rgba(218,215,203,0.5);
+    border-radius: 20px;
+    gap: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.info-serums p {
+    font-family: 'Lobster Two', cursive;
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+.product-title {
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.serum-price {
+    gap: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
