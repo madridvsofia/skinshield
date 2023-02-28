@@ -1,0 +1,54 @@
+:root {
+    --background: #dad7cd;
+    --primary: #af8a4b;
+}
+
+.usericon {
+    height: 35%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+    margin: 70px;
+}
+
+.form h1 {
+    font-family: 'Amiko', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.form input {
+    font-family: 'Amiko', sans-serif;
+}
+
+.form__input {
+    border: rgba(201,168,111,0.6);
+    border-style: outset;
+    background-color: #dad7cd;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    padding: 13px;
+
+}
+
+.form__input:hover{
+    background-color:  rgb(224, 202, 162);
+}
+
+.form button a {
+    font-family: 'Amiko', sans-serif;
+    gap: 50px;
+    color: white;
+}

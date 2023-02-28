@@ -12,26 +12,33 @@
 </head>
 <body>
     <header>
-        <img src="./assets/logo/logocircular.png" alt="logo de skin-shield" class="logo">
+        <a href="./index.html">
+        <img src="./assets/logo/logo.svg" alt="logo de skin-shield" class="logo"/>
+        </a>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li>Home</li>
-                <li>Sobre Skin-Shield</li>
-                <li>Serums</li>
-                <li>Contactanos</li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#infocards">Sobre Skin-Shield</a></li>
+                <li><a href="#products-cards">Serums</a></li>
+                <li><a href="#contact-container">Contactanos</a></li>
             </ul>
         </nav>
-        <img src="./assets/logo/carrito.png" alt="carrito de compra" class="carrito">
+        <img src="./assets/logo/carrito.svg" alt="carrito de compra" class="carrito">
     </header>
     <main>
         <section id="hero">
+                <div class="hero-info">
                     <h1>Descubrí una forma <span>consciente</span> de cuidar tu piel</h1>
+                    <p>¡Sumate para recibir nuestras novedades!</p>
+                    <button><a href="./pages/register.html" target="_blank" >Registrate</a></button>
+                    <button><a href="./pages/login.html" target="_blank">Iniciar sesión</a></button>
+                </div>
                     <img src="./assets/fotoproductos/heroimageserums.svg" alt="serums" class="heroimage"/>
          </section>
 
             <div class="section-title">Nuestro compromiso con la creación de productos</div>
         <section id="infocards">
-             <div class="infocards-container">
+            <div class="infocards-container">
                 <img src="./assets/fotoproductos/info-cards-logos/infocardenvase.svg" alt="Envase ecológico" class="infoimg"/>
                 <div class="cards-info">
                 <h2>Envase ecológico</h2>
@@ -61,34 +68,24 @@
             <div class="info-serums">
                 <h3 class="product-title">Hydration Serum</h3>
                 <img src="./assets/fotoproductos/fotoproducto-serums/serumpielseca.svg" alt="Serum piel seca" class="product"/>
-                <p>Retiene la hidratación de la<br> piel
-                previniendo la tirantez<br>
-                 y el picor.</p>
                 <ul class="product-ingredient">
                     <li>Coenzima Q10</li>
                     <li>Vitamina E</li>
                     <li>Ceramidas</li>
                 </ul>
-                    
-                <div class="serum-price">$4799</div> 
+                 <div class="serum-price">$4799</div> 
                     <button>¡Lo quiero!</button>
-            </div>
+                </div>
 
             
             <div class="info-serums">    
                 <h3 class="product-title">Balance Serum</h3>           
                 <img src="./assets/fotoproductos/fotoproducto-serums/serumpielmixta.svg" alt="Serum piel mixta" class="product"/>
-                
-                <p>Oil free de rápida absorción,<br>
-                comedogénico y de textura<br> ligera
-                con activos hidratantes.</p>
-                
                 <ul class="product-ingredient">
                     <li>Ácido hialurónico</li>
                     <li>Niacinamida</li>
                     <li>Retinol</li>
                 </ul>
-                
                 <div class="serum-price">$4799</div> 
                 <button>¡Lo quiero!</button>
             </div>
@@ -97,13 +94,6 @@
             <div class="info-serums"> 
                 <h3 class="product-title">Not-Shine Serum</h3>     
                 <img src="./assets/fotoproductos/fotoproducto-serums/serumpielgrasa.svg" alt="Serum piel grasa" class="product"/>
-                
-                <p>Oil free de rápida absorción,<br> 
-                         controla la producción 
-                         <br> sebo,tendencia al acné 
-                         y la<br> acumulación
-                        de puntos negros.</p>
-                    
                     <ul class="product-ingredient">
                     <li>Ácido azeláico</li>
                     <li>Vitamina C</li>
@@ -117,28 +107,44 @@
         <div class="section-title">¿Buscas nuestros productos?</div>
         <section id="contact-container">
             <div class="contactinfo">
-            <img src="./assets/iconosdecontacto/1.svg" alt="icono de gmail"/>
-            <p>contactoclientes@skinshield.com</p>
+            <ul class="contactinfo__ul">
+            <li>
+            <img src="./assets/iconosdecontacto/1.svg" alt="icono de gmail" class="contactinfo__img"/>
+            <p class="contactinfo__text">contactoclientes@skinshield.com</p>
+            </li>
+            <li>
+            <img src="./assets/iconosdecontacto/2.svg" alt="icono de whatsapp" class="contactinfo__img"/>
+            <p class="contactinfo__text">(011) 15-2244-1122</p>
+            </li>
+            <li>
+            <img src="./assets/iconosdecontacto/3.svg" alt="icono de instagram" class="contactinfo__img"/>
+            <p class="contactinfo__text">@Skin-Shield</p>
+            </li>
+            <li>
+            <img src="./assets/iconosdecontacto/4.svg" alt="icono de youtube" class="contactinfo__img"/>
+            <p class="contactinfo__text">Skin-Shield</p>
+            </li>
+            </ul>
             </div>
-            <div class="contactinfo">
-            <img src="./assets/iconosdecontacto/2.svg" alt="icono de whatsapp"/>
-            <p>(011) 15-2244-1122</p>
-            </div>
-            <div class="contactinfo">
-            <img src="./assets/iconosdecontacto/3.svg" alt="icono de instagram"/>
-            <p>@Skin-Shield</p>
-            </div>
-            <div class="contactinfo">
-            <img src="./assets/iconosdecontacto/4.svg" alt="icono de youtube"/>
-            <p>Skin-Shield</p>
-            </div>
+            <div class="map-container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26262.181161915927!2d-58.79422365970544!3d-34.63518528802942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9456828334bf%3A0xa21f3cafb678d758!2sMoreno!5e0!3m2!1ses!2sar!4v1677351082448!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="contactinfo__text">
+             Encontranos en nuestra sucursal<br>
+            ubicada en Zona Oeste, Moreno.<br>
+            Horario de atención: <br>
+            Lunes a viernes de 09:00hs a 20:00hs
+            </p>
+         </div>
          </section>
 
          <footer>
-            <div class="container">
-
+            <div>
+                <ul class="footer-links">
+                    <li>&copy;Skin-Shield</li>
+                    <li>Bases y condiciones</li>
+                    <li>Política de privacidad</li>
+                </ul>
             </div>
-
          </footer>
     </main>
 </body>
