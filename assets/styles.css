@@ -3,6 +3,7 @@
 :root {
     --background: rgba(218,215,203,0.5);
     --primary: #af8a4b;
+    --bg-main: rgba(201,168,111,0.6);
 }
 
 * {
@@ -16,12 +17,22 @@
     font-family: 'Sofia', cursive;
 }
 
-header {
+main {
+    max-width: 1500px;
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: var(--bg-main);
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: rgba(218,215,203,0.6);
     position: sticky;
     position: -webkit-sticky;
@@ -37,7 +48,7 @@ header {
     }
 
 .carrito {
-    height: 35%;
+    height: 45px;
     width: 50px;
     display: flex;
     justify-content: center;
@@ -58,22 +69,51 @@ header {
 .navbar-list li a {
     font-family: 'Amiko', sans-serif;
     font-weight: bolder;
-    border-radius: 15px;
-    color: black;
-    padding: 14px;
-    gap: 5px;
+    color:rgb(201, 168, 111);
+    padding: 15px;
+    gap: 10px;
     opacity: 75%;
     cursor: pointer;
 }
 
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(201,168,111,0.6)
+.button{ 
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(201, 168, 111);
+    padding: 20px 25px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
 }
+
+.button:hover{
+    color: rgb(219,213,199);
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 0;
+    height: 100%;
+    background-color: rgb(201, 168, 111);
+    transform: skewX(10deg);
+    z-index: -1;
+    transition: width 1s;
+}
+
+.button:hover::before{
+    width: 150%;
+}
+
+#menu-toggle,
+.menu-label {
+    display: none;
+}
+
+
 
 #hero {
     width: 100%;
@@ -191,6 +231,10 @@ main {
     gap: 25px;
     padding: 25px;
     text-align: left;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color:  rgba(201, 168, 111, 0.212);
 }
 
 .product-ingredient li {
@@ -249,11 +293,12 @@ button:hover{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    align-content: flex-start;
 }
 
 .contactinfo__text {
     font-family: 'Amiko', sans-serif;
-    text-align: left;
+    padding-right: 10px;
 }
 
 .contactinfo__img {
@@ -295,3 +340,73 @@ footer {
     font-family: 'Amiko', sans-serif;
 }
 
+/* animaciones */
+
+html {
+    scroll-padding-top: 35%;
+    scroll-behavior: smooth;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 992px) {
+
+    .navbar-list {
+        position: absolute;
+        top: 85px;
+        left: 77%;
+        right: 5%;
+        width: 20%;
+        background-color: rgba(218,215,203);
+        border: 1px solid;
+        border-color:rgb(201, 168, 111);
+        border-radius: 0px 0px 10px 10px;
+        border-top: none;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        padding: 5px 5px;
+        gap: 5px;
+        z-index: 2;
+        display: none;
+
+    }
+
+    .navbar-list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .carrito {
+        width: 43px;
+        height: 39px;
+        border: 2px ;
+        margin-right: 0rem;
+        margin-top: 3px;
+    }
+
+    .menu-label {
+        display: flex;
+        cursor: pointer; 
+    }
+
+    .menu-label img{ 
+        width: 48px;
+        height: 48px;
+        margin-left: 670px;
+    }
+
+    #menu-toggle:checked + .navbar-list {
+        display: flex;
+    }
+
+    main {
+        width: 100%;
+        background-color: var(--bg-main);
+    }
+}
